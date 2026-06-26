@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naveen Kumar | Data Science student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="navi.css"/>
+</head>
+<body>
+
+  <nav class="nav" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-name">Naveen Kumar</span>
+      <span class="nav-title">Data Science student</span>
+    </div>
+    <ul class="nav-links">
+      <li><button class="active" onclick="goTo('home',this)">Home</button></li>
+      <li><button onclick="goTo('about',this)">About</button></li>
+      <li><button onclick="goTo('skills',this)">Skills</button></li>
+      <li><button onclick="goTo('projects',this)">Projects</button></li>
+      <li><button onclick="goTo('contact',this)">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <div class="photo-card">
+        <img src="pic.png" alt="Naveen Kumar" class="photo-img" onerror="this.style.display='none';document.getElementById('photo-fallback').style.display='flex'"/>
+        <div id="photo-fallback" class="photo-fallback">
+          
+          
+        </div>
+      </div>
+      <a class="dl-btn" href="Naveen resume.docx" download>
+        <i class="ti ti-download" aria-hidden="true"></i> Download Resume
+      </a>
+    </div>
+    <div class="hero-right">
+      <div>
+        <div class="big-name">Naveen<br/><span>Kumar</span></div>
+        <div class="badge"><span class="dot"></span>Data Scientist</div>
+      </div>
+      <div class="info-card">
+        <div class="crow"><div class="clbl">Name</div><div class="cval nm">Naveen Kumar</div></div>
+        <div class="crow"><div class="clbl">Goal</div><div class="cval">"Turn<bold> data</bold> into information &amp; information into insight"</div></div>
+        <div class="crow"><div class="clbl">About Me</div><div class="cval">Passionate about transforming raw numbers into compelling stories. Fresher in SQL, Python &amp; data visualization.</div></div>
+        <div class="crow">
+          <div class="clbl">Skills</div>
+          <div class="stags">
+            <span class="stag">SQL</span>
+            <span class="stag">Python</span>
+            <span class="stag">Power BI</span>
+            <span class="stag">Tableau</span>
+            <span class="stag">Excel</span>
+            <span class="stag">Statistics</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="sec-eye">Who I am</p>
+    <h2 class="sec-title">About Me</h2>
+    <p class="sec-body">I'm Naveen Kumar, a data scince student passionate about transforming raw numbers into compelling stories. With expertise in SQL, Python, and data visualization, I help businesses make decisions backed by evidence — not guesswork.</p>
+    <div class="about-grid">
+      <div class="about-item"><div class="ai-label">Location</div><div class="ai-val">Madanapalli, Andhra Pradesh</div></div>
+      <div class="about-item"><div class="ai-label">Experience</div><div class="ai-val">Data Science student </div></div>
+      <div class="about-item"><div class="ai-label">Specialization</div><div class="ai-val">Data Analysis &amp; Visualization</div></div>
+      <div class="about-item"><div class="ai-label">Availability</div><div class="ai-val">Open for projects &amp; collaborations</div></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="sec-eye">What I use</p>
+    <h2 class="sec-title">Skills</h2>
+    <p class="sec-body">Tools and technologies I work with to turn data into decisions.</p>
+    <div class="skills-wrap">
+      <span class="sk">SQL</span>
+      <span class="sk">Python</span>
+      <span class="sk">Power BI</span>
+      <span class="sk">Tableau</span>
+      <span class="sk">Excel</span>
+      <span class="sk">Data Cleaning</span>
+      <span class="sk">Statistics</span>
+      <span class="sk">Machine Learning</span>
+      <span class="sk">Pandas</span>
+      <span class="sk">NumPy</span>
+      <span class="sk">Matplotlib</span>
+      <span class="sk">Seaborn</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="sec-eye">My Work</p>
+    <h2 class="sec-title">Projects</h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <span class="proj-tag">Python · ML</span>
+        <div class="proj-name">Customer Churn Prediction</div>
+        <p class="proj-desc">Classification model to predict customer churn with 91% accuracy using Random Forest.</p>
+      </div>
+      <div class="proj-card">
+        <span class="proj-tag">SQL · Power BI</span>
+        <div class="proj-name">Sales Performance Dashboard</div>
+        <p class="proj-desc">Interactive dashboard tracking KPIs across regions with real-time SQL data pipelines.</p>
+      </div>
+      <div class="proj-card">
+        <span class="proj-tag">Python · Tableau</span>
+        <div class="proj-name">Supply Chain Analytics</div>
+        <p class="proj-desc">End-to-end analysis identifying bottlenecks and reducing lead time by 18%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <p class="sec-eye">Get in touch</p>
+    <h2 class="sec-title">Contact Me</h2>
+    <p class="sec-body">Have a data challenge? I'm always open to new projects and collaborations.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="ti ti-mail cc-icon" aria-hidden="true"></i>
+        <div class="cc-label">Email</div>
+        <div class="cc-val"><a href="mailto:vooladinaveenkumar@gmail.com">vooladinaveenkumar@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <i class="ti ti-phone cc-icon" aria-hidden="true"></i>
+        <div class="cc-label">Phone</div>
+        <div class="cc-val"><a href="tel:+918106301902">+91 8106301902</a></div>
+      </div>
+      <div class="contact-card">
+        <i class="ti ti-brand-linkedin cc-icon" aria-hidden="true"></i>
+        <div class="cc-label">LinkedIn</div>
+        <div class="cc-val"><a href="https://www.linkedin.com/in/naveen-kumar-vooladi-782b77344/">linkedin.com/in/naveenkumar</a></div>
+      </div>
+      <div class="contact-card">
+        <i class="ti ti-map-pin cc-icon" aria-hidden="true"></i>
+        <div class="cc-label">Location</div>
+        <div class="cc-val">Madanapalli, Andhra Pradesh, India</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Naveen Kumar · Data Scientist — All rights reserved</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
